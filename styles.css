@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 * {
   list-style-type: none;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -11,9 +11,11 @@ html {
   --color-primary: #333;
   --color-secondary: #f5f5f5;
   --color-third: #555;
+  --color-fourth: #e2e2e2;
   --color-backgorund: rgba(0, 0, 0, 0.1);
   --color-font: #fff;
   --color-font2: #555;
+  --color-button: #999;
 }
 
 .theme-purple {
@@ -88,7 +90,7 @@ li:hover {
   margin: 2rem 0;
 }
 header {
-  background-image: url("./images/bg.png");
+  background-image: url('./images/bg.png');
   background-repeat: repeat;
 }
 
@@ -140,15 +142,15 @@ span {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 2rem;
+  gap: 1rem;
 }
 .box {
   display: flex;
-  flex-wrap: nowrap;
   background-color: var(--color-secondary);
   flex: 40%;
   text-align: left;
   color: var(--color-font2) !important;
+  border-radius: 1rem;
 }
 
 .box h1 {
@@ -179,21 +181,48 @@ span {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  flex: 30%;
-  gap: 2rem;
+  gap: 1rem;
 }
-
 #feedback .box {
-  flex: 30%;
+  padding: 2rem 2rem 0 2rem;
+  text-align: center;
+  flex: 0 0 27%;
+  /* code for mobile  */
+  /* flex: 1 100%;
+  margin: 1rem; */
+  position: relative;
+  background-color: var(--color-fourth);
+}
+#feedback .box h3 {
+  font-weight: 600;
+  position: sticky;
 }
 
 #feedback .box .img {
-  width: 150%;
-  top: -80px;
-  position: relative;
-  left: 150px;
+  width: 80%;
+  position: absolute;
+  left: 7%;
+  top: -17%;
 }
 
 #feedback .box img {
-  width: 100%;
+  width: 35%;
+}
+#feedback .box .content {
+  margin-top: 1.5rem;
+}
+
+.box button {
+  background-color: var(--color-button);
+  border: none;
+  width: 80%;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+  color: var(--color-font);
+  font-weight: 600;
+  font-size: 1rem;
+}
+.box button:hover {
+  cursor: pointer;
+  background-color: var(--color-third);
 }
