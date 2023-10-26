@@ -79,6 +79,7 @@ nav .container {
   border: white 1px solid;
   border-radius: 50%;
   box-shadow: 1px 1px 1px white;
+  margin-left: 0.2rem;
 }
 .colors li:hover {
   cursor: pointer;
@@ -228,7 +229,7 @@ span {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
-  top: -17%;
+  top: -20%;
 }
 
 #feedback .box img {
