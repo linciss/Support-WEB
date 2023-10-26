@@ -69,9 +69,6 @@ nav .container {
   position: sticky;
 }
 
-li:hover {
-  cursor: pointer;
-}
 .color-change ul {
   padding: 0;
   display: flex;
@@ -82,6 +79,10 @@ li:hover {
   border: white 1px solid;
   border-radius: 50%;
   box-shadow: 1px 1px 1px white;
+}
+.colors li:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .phone ul {
@@ -213,9 +214,6 @@ span {
   margin-top: 2rem;
   text-align: center;
   flex: 0 0 27%;
-  /* code for mobile  */
-  /* flex: 1 100%;
-  margin: 1rem; */
   position: relative;
   background-color: var(--color-fourth);
 }
@@ -225,14 +223,16 @@ span {
 }
 
 #feedback .box .img {
-  width: 80%;
+  width: 120px;
+  height: 120px;
   position: absolute;
-  left: 7%;
+  left: 50%;
+  transform: translate(-50%, 0);
   top: -17%;
 }
 
 #feedback .box img {
-  width: 35%;
+  width: 100%;
 }
 #feedback .box .content {
   margin-top: 1.5rem;
@@ -252,6 +252,7 @@ span {
 .box button:hover {
   cursor: pointer;
   background-color: var(--color-third);
+  transition: 0.3s ease-in-out;
 }
 
 footer {
@@ -290,9 +291,13 @@ footer .contact {
   border-radius: 0.3rem;
   width: 5rem;
   font-weight: 800;
+  margin-bottom: 4rem;
 }
 .contact button:hover {
+  background-color: var(--color-primary);
+  color: var(--color-font);
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 
 footer .container {
@@ -338,4 +343,42 @@ footer .media {
 #facebook:hover,
 #twitter:hover {
   background-position: 0 -32px;
+}
+
+@media (max-width: 1230px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .title h2 {
+    font-size: 1.3rem;
+  }
+
+  .box {
+    flex: 1 100%;
+  }
+
+  #feedback .box {
+    flex: 1 100%;
+    margin: 1rem;
+  }
+  #feedback .box .img {
+    width: 120px;
+    height: 120px;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  #feedback .box img {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  #feedback .box .img {
+    width: 110px;
+    height: 110px;
+    top: -15%;
+  }
 }
