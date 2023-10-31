@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 * {
   list-style-type: none;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -22,9 +22,12 @@ html {
   --color-primary: #912094;
   --color-secondary: #e590ff;
   --color-third: #912094;
+  --color-fourth: #e590ff;
   --color-backgorund: rgba(255, 0, 242, 0.1);
   --color-font2: #333;
   --color-font: #fff;
+  /* need purple color for button  equivilent oto #999 */
+  --color-button: #d31ad3;
 }
 
 .theme-blue {
@@ -52,7 +55,7 @@ body {
   color: var(--color-font2);
   margin: 0;
   padding: 0;
-  background-image: url('./images/bg.png');
+  background-image: url("./images/bg.png");
 }
 
 nav {
@@ -117,7 +120,7 @@ nav .container {
   margin: 2rem 0;
 }
 header {
-  background-image: url('./images/bg.png');
+  background-image: url("./images/bg.png");
   background-repeat: repeat;
 }
 
@@ -262,7 +265,7 @@ footer {
 }
 footer .contact {
   background-color: var(--color-third);
-  background-image: url('./images/bg2.png');
+  background-image: url("./images/bg2.png");
   color: var(--color-font);
   text-align: center;
 }
@@ -318,25 +321,25 @@ footer .media {
 #linkedin {
   width: 32px;
   height: 32px;
-  background: url('./images/in.png') 0 0;
+  background: url("./images/in.png") 0 0;
 }
 
 #youtube {
   width: 32px;
   height: 32px;
-  background: url('./images/yt.png') 0 0;
+  background: url("./images/yt.png") 0 0;
 }
 
 #facebook {
   width: 32px;
   height: 32px;
-  background: url('./images/fb.png') 0 0;
+  background: url("./images/fb.png") 0 0;
 }
 
 #twitter {
   width: 32px;
   height: 32px;
-  background: url('./images/tw.png') 0 0;
+  background: url("./images/tw.png") 0 0;
 }
 
 #linkedin:hover,
@@ -348,6 +351,9 @@ footer .media {
 
 @media (max-width: 1230px) {
   .container {
+    padding: 0 1rem;
+  }
+  header .title {
     padding: 0 1rem;
   }
 }
