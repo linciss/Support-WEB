@@ -389,3 +389,17 @@ footer .media {
     top: -15%;
   }
 }
+
+@media (max-width: 500px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bottom .container {
+    justify-content: center;
+  }
+  span {
+    padding: 0.3rem;
+  }
+}
