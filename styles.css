@@ -142,10 +142,29 @@ header {
 
 .header-img {
   background-color: var(--color-backgorund);
+  /* idk why but it was 356px so i fix it with this   */
+  height: 352px;
 }
 .slideshow {
   width: 100%;
 }
+.slides {
+  display: none;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 header .container .slides img {
   object-fit: cover;
   width: 100%;

@@ -13,3 +13,24 @@ list.childNodes.forEach((element) => {
     localStorage.setItem("theme", `theme-${element.id}`);
   });
 });
+
+let slideIndex = 0;
+
+const showSlides = (index) => {
+  let slides = document.getElementsByClassName("slides");
+  console.log(slides.length, index);
+  if (index === slides.length) slideIndex = 0;
+  if (index < 0) slideIndex = slides.length;
+  for (i = 0; i < slides.length; i++) slides[i].style.display = "none";
+  slides[slideIndex].style.display = "block";
+};
+showSlides(slideIndex);
+
+const nextSlide = () => {
+  showSlides(slideIndex + 1);
+};
+
+setInterval(() => {
+  slideIndex++;
+  showSlides(slideIndex);
+}, 5000);
