@@ -31,7 +31,15 @@ html {
 }
 
 .theme-blue {
-  --primary-color: #04436e;
+  --color-primary: #04436e;
+  --color-secondary: #abdeff;
+  --color-third: #115481;
+  --color-fourth: #6fc4fd;
+  --color-backgorund: rgba(0, 60, 255, 0.1);
+  --color-font2: #333;
+  --color-font: #fff;
+  /* need purple color for button  equivilent oto #999 */
+  --color-button: #3e82af;
 }
 
 .theme-yellow {
