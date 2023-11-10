@@ -3,6 +3,7 @@ const documentElement = document.documentElement;
 const theme = localStorage.getItem("theme");
 const next = document.querySelector(".next");
 const back = document.querySelector(".back");
+const up = document.querySelector(".up");
 
 documentElement.classList = "theme-grey";
 documentElement.classList.add(theme);
@@ -42,3 +43,23 @@ setInterval(() => {
   slideIndex++;
   showSlides(slideIndex);
 }, 5000);
+
+window.onscroll = () => {
+  scrollChcker();
+};
+window.onload = () => {
+  up.style.display = "none";
+};
+
+const scrollChcker = () => {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    up.style.display = "block";
+  } else {
+    up.style.display = "none";
+  }
+};
+
+up.addEventListener("click", () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
