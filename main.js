@@ -5,7 +5,7 @@ const next = document.querySelector(".next");
 const back = document.querySelector(".back");
 const up = document.querySelector(".up");
 
-documentElement.classList = "theme-grey";
+documentElement.classList = "theme-grey-sils";
 documentElement.classList.add(theme);
 
 list.childNodes.forEach((element) => {
