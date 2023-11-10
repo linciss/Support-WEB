@@ -7,7 +7,7 @@
 html {
   scroll-behavior: smooth;
 }
-.theme-grey {
+.theme-grey-sils {
   --color-primary: #333;
   --color-secondary: #f5f5f5;
   --color-third: #555;
@@ -18,7 +18,7 @@ html {
   --color-button: #999;
 }
 
-.theme-purple {
+.theme-purple-sils {
   --color-primary: #912094;
   --color-secondary: #eab5fa;
   --color-third: #b73dbb;
@@ -30,7 +30,7 @@ html {
   --color-button: #d31ad3;
 }
 
-.theme-blue {
+.theme-blue-sils {
   --color-primary: #04436e;
   --color-secondary: #abdeff;
   --color-third: #1c6ea5;
@@ -42,7 +42,7 @@ html {
   --color-button: #3e82af;
 }
 
-.theme-yellow {
+.theme-yellow-sils {
   --color-primary: #cabe12;
   --color-secondary: #f7f094;
   --color-third: #e9db1a;
@@ -134,6 +134,7 @@ nav .container {
   font-size: 2.6rem;
   font-weight: 600;
   margin: 2rem 0;
+  color: var(--color-primary);
 }
 header {
   background-image: url("./images/bg.png");
@@ -147,7 +148,34 @@ header {
 }
 .slideshow {
   width: 100%;
+  position: relative;
 }
+.slideshow .back,
+.next {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+}
+.back h1,
+.next h1 {
+  color: white;
+}
+
+.slideshow .next {
+  left: 50%;
+  justify-content: flex-end;
+}
+.next:hover,
+.back:hover {
+  cursor: pointer;
+
+  background-color: rgba(0, 0, 0, 0.01);
+  transition: 0.3s ease-in-out;
+}
+
 .slides {
   display: none;
 }
