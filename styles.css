@@ -22,7 +22,7 @@ html {
   --color-primary: #912094;
   --color-secondary: #eab5fa;
   --color-third: #b73dbb;
-  --color-fourth: #e590ff;
+  --color-fourth: #df82fc;
   --color-backgorund: rgba(255, 0, 242, 0.1);
   --color-font2: #333;
   --color-font: #fff;
@@ -33,7 +33,7 @@ html {
 .theme-blue {
   --color-primary: #04436e;
   --color-secondary: #abdeff;
-  --color-third: #115481;
+  --color-third: #1c6ea5;
   --color-fourth: #6fc4fd;
   --color-backgorund: rgba(0, 60, 255, 0.1);
   --color-font2: #333;
@@ -43,7 +43,15 @@ html {
 }
 
 .theme-yellow {
-  --primary-color: #cabe12;
+  --color-primary: #cabe12;
+  --color-secondary: #f7f094;
+  --color-third: #e9db1a;
+  --color-fourth: #f8ed4b;
+  --color-backgorund: rgba(251, 255, 0, 0.1);
+  --color-font2: #333;
+  --color-font: #000000;
+  /* need purple color for button  equivilent oto #999 */
+  --color-button: #ddd33f;
 }
 
 #grey {
